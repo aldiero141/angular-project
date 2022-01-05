@@ -1,7 +1,8 @@
 <!-- <button [(ngModel)]="searchText" value="INSTA"> INSTA </button> -->
 <!-- <input type="text" [(ngModel)]="searchText"> -->
 <section class="card-list">
-    <mat-card *ngFor="let title of titleList |filter:searchText">
+    <mat-card *ngFor="let title of titleList">
+    <!-- <mat-card *ngFor="let title of titleList |filter:searchText"> -->
         <mat-card-title>
             {{title.short_name}}
         </mat-card-title>
